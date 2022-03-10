@@ -1,0 +1,53 @@
+<section>
+    <div class="grid">
+      <div class="grid-item"><img src="pone la url de tu imagen aca"></div>
+      <div class="grid-item"><img src="pone la url de tu imagen aca"></div>
+      <div class="grid-item"><img src="pone la url de tu imagen aca"></div>
+      <div class="grid-item"><img src="pone la url de tu imagen aca"></div>
+      <div class="grid-item"><img src="pone la url de tu imagen aca"></div>
+      <div class="grid-item"><img src="pone la url de tu imagen aca"></div>
+    </div>
+  </section>
+  
+  <style>
+  
+.grid
+ {
+  display: grid;
+  grid-template-columns: repeat(3,150px);  /* columnas que se repiten 3 veces */
+  grid-template-rows: repeat(3,150px); /* filas que se repiten 3 veces  */
+  grid-gap:50px 30px; /* 50 de distancia vertical y 30 con distancia horizontal */
+}
+
+.grid-item{
+  border:thin gray solid;
+  padding:10px;
+}
+img {
+  width: 100%;
+}
+  /*La version movil es esta que esta aca abajo. A partir de los 800 px de tamaño te pantalla, la version del css cambia a la que esta arriba*/
+  @media(max-width:800px){
+  
+  .grid
+ {
+  display: grid;
+  grid-template-columns: repeat(3,80px);  /* Modifica aca el tamaño que queres que tengan en la version movil */
+  grid-template-rows: repeat(3,80px); /* Aca tambien, te puse 80, pero hacelo como gustes  */
+  grid-gap:50px 30px; /* 50 de distancia vertical y 30 con distancia horizontal */
+}
+
+
+.grid-item{
+  border:thin gray solid;
+  padding:10px;
+}
+img {
+  width: 100%;
+}
+  
+  }
+
+
+
+  </style>
